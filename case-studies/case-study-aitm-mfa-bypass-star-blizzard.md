@@ -165,4 +165,3 @@ All of these can be proxied through the AiTM framework.
 - `techniques/spring-boot-actuator-exploitation.md` (related infrastructure exploitation)
 - `techniques/password-reset-abuse.md` (authentication attack techniques)
 - `methodology/bug-bounty-playbook.md`
-- [Microsoft Threat Intelligence: Star Blizzard](https://www.microsoft.com/en-us/security/blog/tag/star-blizzard/)
