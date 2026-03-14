@@ -1,0 +1,13 @@
+Found 12 broken links:
+File: README.md --> Link: techniques/sql-injection.md
+File: README.md --> Link: techniques/ssrf-server-side-request-forgery.md
+File: README.md --> Link: techniques/file-upload-vulnerabilities.md
+File: README.md --> Link: scenarios/sql-injection-testing-workflow.md
+File: README.md --> Link: scenarios/file-upload-to-rce-workflow.md
+File: scenarios\README.md --> Link: sql-injection-testing-workflow.md
+File: scenarios\README.md --> Link: file-upload-to-rce-workflow.md
+File: techniques\README.md --> Link: sql-injection.md
+File: techniques\README.md --> Link: ssrf-server-side-request-forgery.md
+File: techniques\README.md --> Link: file-upload-vulnerabilities.md
+File: web-vulnerabilities\file-upload-and-deserialization.md --> Link: ../techniques/file-upload-vulnerabilities.md
+File: web-vulnerabilities\injection.md --> Link: ../techniques/sql-injection.md

